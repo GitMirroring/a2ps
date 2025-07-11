@@ -1,7 +1,8 @@
                     User visible changes in GNU a2ps.
 
 * Noteworthy changes in release ?.? (????-??-??) [?]
-
+ * Build system:
+   - Remove unused non-C23-compliant debug code.
 
 * Noteworthy changes in release 4.15.6 (2024-03-13) [stable]
  * Bug fixes:
@@ -171,7 +172,7 @@
    - Fixes for security bugs CVE-2001-1593, CVE-2015-8107 and CVE-2014-0466.
    - Minor bugs fixed.
 
-Version 4.14	    Dec 29, 2007 
+Version 4.14	    Dec 29, 2007
  * New Maintainer.
  * No UTF-8 support yet ;-<  Basically this is a maintenance release.
  * License:
@@ -184,7 +185,7 @@ Version 4.14	    Dec 29, 2007
  * Predefined delegations:
    - Add html2ps delegation if netscape don't run.
    - Now the configure script check if netscape support remote-command.
-   - Now works with modern GV(PostScript and PDF viewer).  Tested with 
+   - Now works with modern GV(PostScript and PDF viewer).  Tested with
      3.6.2.
  * Options:
    - Better description on the default output and the -d option.
