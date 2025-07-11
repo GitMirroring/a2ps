@@ -42,7 +42,6 @@
 
 #define YYDEBUG 1
 #define YYERROR_VERBOSE 1
-#define YYPRINT(file, type, value)   yyprint (file, type, value)
 
 /* We need to use the same `const' as bison, to avoid the following
    prototypes to diverge from the function declarations */
@@ -63,7 +62,6 @@ extern const char * sshfilename;
 
 /* Local prototypes */
 void yyerror (const char *msg);
-static void yyprint ();
 
 /* Initilizes the obstacks */
 void sshlex_initialize (void);
@@ -726,36 +724,6 @@ void
 yyerror (const char *msg)
 {
   error_at_line (1, 0, sshfilename, sshlineno, "%s", msg);
-}
-
-/*
- * FIXME: Cover the other relevant types
- */
-static void
-yyprint (FILE *file, int type, YYSTYPE value)
-{
-  switch (type) {
-  case tBACK_REF:
-    fprintf (file, " \\%d", value.integer);
-    break;
-
-  case tFFLAGS:
-    putc (' ', file);
-    fflag_self_print (value.fflags, file);
-    break;
-
-  case tFACE:
-    fprintf (file, " %s", face_to_string (value.face));
-    break;
-
-  case tREGEX:
-    fprintf (file, " /%s/", value.pattern->pattern);
-    break;
-
-  case tSTRING:
-    fprintf (file, " \"%s\"", value.string);
-    break;
-  }
 }
 
 struct style_sheet *

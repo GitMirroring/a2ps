@@ -42,7 +42,6 @@
 
 #define YYDEBUG 1
 #define YYERROR_VERBOSE 1
-#define YYPRINT(file, type, value)   yyprint (file, type, value)
 
 /* Comes from the caller */
 extern FILE * ppdin;
@@ -50,7 +49,6 @@ extern struct a2ps_job * job;
 
 /* Local prototypes */
 void yyerror (const char *msg);
-static void yyprint ();
 
 /* Initilizes the obstacks */
 void ppdlex_initialize (void);
@@ -148,27 +146,6 @@ void
 yyerror (const char *msg)
 {
   error_at_line (1, 0, ppdfilename, ppdlineno, "%s", msg);
-}
-
-/*
- * For debugging
- */
-static void
-yyprint (FILE *file, int type, YYSTYPE value)
-{
-  switch (type) {
-  case STRING:
-    fprintf (file, " \"%s\"", value.string);
-    break;
-
-  case SYMBOL:
-    fprintf (file, " %s", value.string);
-    break;
-
-  case USTRING:
-    fprintf (file, " u\"%s\"", value.ustring);
-    break;
-  }
 }
 
 struct ppd *
