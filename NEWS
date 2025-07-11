@@ -1,5 +1,8 @@
                     User visible changes in GNU a2ps.
 
+* Noteworthy changes in release ?.? (????-??-??) [?]
+
+
 * Noteworthy changes in release 4.15.7 (2025-07-11) [stable]
  * Build system:
    - Remove unused non-C23-compliant debug code.
