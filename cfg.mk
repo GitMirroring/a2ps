@@ -22,7 +22,7 @@ gnulib_dir = $(GNULIB_SRCDIR)
 manual_title = GNU a2ps
 
 # Set format of NEWS
-old_NEWS_hash := 8fa76b09e5508b2ab2487453db695b4d
+old_NEWS_hash := 85c25ae060a6e5b15a0b1ac7a8796d02
 
 # Don't check 3rd-party sources or test files
 VC_LIST_ALWAYS_EXCLUDE_REGEX = tests/(g?ps-ref|tstfiles)/|regex.c$$
