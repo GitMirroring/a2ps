@@ -16,8 +16,9 @@
 % General Public License for more details.
 %
 % You should have received a copy of the GNU General Public License
-% along with this program; if not, write to the Free Software
-% Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+% along with this program; if not, see
+% <https://www.gnu.org/licenses/gpl-3.0.html>.
+
 
 23 dict dup begin
   /FontMatrix [.001 0 0 .00112 0 0] def
@@ -27,7 +28,7 @@
   /FullName (PCfont) def
   /FontName /PCfont def
   /isFixedPitch true def
-  /Encoding 
+  /Encoding
   [
     /null /Wsmiley /Bsmiley /heart /diamond /club /spade /Bbullet
     /Wbullet /Bcircle /Wcircle /male /female /quarternote /sixteenthnote
@@ -343,19 +344,19 @@
       .45 .45 scale (2) _uC restore } def
     /block { 50 0 mt 50 400 lt 550 400 lt 550 0 lt fill } def
     /blank {} def
-  end 
+  end
 
-  /BuildChar { 
-    600 0 
+  /BuildChar {
+    600 0
     0 -200 600 800
     setcachedevice
     exch begin
       Encoding exch get
       CharacterDefs exch get
-      exec 
+      exec
     end
   } def
 
   /UniqueID 847667 def
-end 
+end
 /PCFont exch definefont pop
