@@ -1,7 +1,15 @@
                     User visible changes in GNU a2ps.
 
 * Noteworthy changes in release ?.? (????-??-??) [?]
-
+ * Bug fixes:
+   - Fix a buffer overflow when a long value supplied to -E.
+   - Include some header files with system paths, not user paths.
+ * Build system:
+   - Fix building on systems that need gnulib's malloc wrapper.
+   - Remove a generated file from git.
+   - Update the version of gettext used.
+ * Documentation:
+   - Update copyright notices to point to GPL online.
 
 * Noteworthy changes in release 4.15.7 (2025-07-11) [stable]
  * Build system:
