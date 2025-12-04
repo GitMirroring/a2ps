@@ -1,6 +1,6 @@
                     User visible changes in GNU a2ps.
 
-* Noteworthy changes in release ?.? (????-??-??) [?]
+* Noteworthy changes in release 4.15.8 (2025-12-04) [stable]
  * Bug fixes:
    - Fix a buffer overflow when a long value supplied to -E.
    - Include some header files with system paths, not user paths.
