@@ -17,6 +17,9 @@ filters (such as groff, texi2dvi, dvips, gzip etc.), what allows a
 uniform treatment (n-up, page selection, duplex etc.) of heterogeneous
 files.
 
+a2ps is distributed under the GNU Public License, version 3, or, at your
+option, any later version. See the file COPYING for more details.
+
 
 Contents:
 =========
