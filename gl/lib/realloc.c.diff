@@ -1,0 +1,11 @@
+--- gnulib/lib/realloc.c	2025-12-04 15:11:05.667065669 +0000
++++ lib/realloc.c	2025-12-04 15:10:38.141942422 +0000
+@@ -92,7 +92,7 @@
+     }
+ # endif
+ 
+-  void *result = realloc (p, n1);
++  void *result = GC_realloc (p, n1);
+ 
+ # if !HAVE_REALLOC_POSIX
+   if (result == NULL)

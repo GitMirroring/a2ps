@@ -1,0 +1,11 @@
+--- gnulib/lib/malloc.c	2025-12-04 15:07:45.014166033 +0000
++++ lib/malloc.c	2025-12-04 15:07:32.190108438 +0000
+@@ -45,7 +45,7 @@
+     }
+ #endif
+ 
+-  void *result = malloc (n);
++  void *result = GC_malloc (n);
+ 
+ #if !HAVE_MALLOC_POSIX
+   if (result == NULL)

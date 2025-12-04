@@ -1,5 +1,5 @@
---- gnulib/lib/free.c	2022-05-27 22:32:20.509578642 +0100
-+++ lib/free.c	2022-06-09 13:27:04.079620206 +0100
+--- gnulib/lib/free.c	2025-12-04 15:00:30.570204049 +0000
++++ lib/free.c	2025-12-04 15:04:27.056275098 +0000
 @@ -41,11 +41,11 @@
    err[0] = errno;
    err[1] = errno;
@@ -8,9 +8,9 @@
 +  GC_free (p);
    errno = err[errno == 0];
  # else
-   int err = errno;
+   int saved_errno = errno;
 -  free (p);
 +  GC_free (p);
-   errno = err;
+   errno = saved_errno;
  # endif
  }
