@@ -425,15 +425,13 @@ list_options (struct a2ps_job *a_job, FILE *stream)
   if (IS_EMPTY (style_request))
     /* TRANS: a2ps -E --list=options.  Warning, this answer is also
        used for the PPD file.  Make it compatible with both.  */
-    strcpy (buf, _("selected automatically"));
-  else
-    strcpy (buf, style_request);
+    style_request = _("selected automatically");
   title (stream, '-', false, _("Pretty-printing:\n"));
   fprintf (stream, _("\
   style sheet     = %s\n\
   highlight level = %s\n\
   strip level     = %d\n"),
-	   buf,
+	   style_request,
 	   highlight_level_to_string (highlight_level),
 	   strip_level);
   putc ('\n', stream);
