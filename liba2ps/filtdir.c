@@ -28,7 +28,8 @@
 #include <stdbool.h>
 #include <dirent.h>
 
-#include "error.h"
+#include <error.h>
+
 #include "darray.h"
 #include "filtdir.h"
 #include "routines.h"

@@ -117,7 +117,7 @@
 #include <stdarg.h>
 
 #include "xalloc.h"
-#include "error.h"
+#include <error.h>
 
 /* Cardinality of a static array. */
 

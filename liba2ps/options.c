@@ -23,11 +23,12 @@
 /************************************************************************/
 #include <config.h>
 
+#include <getopt.h>
+
 #include "a2ps.h"
 #include "routines.h"
 #include "options.h"
 #include "argmatch.h"
-#include "getopt.h"
 #include "caret.h"
 #include "message.h"
 #include "jobs.h"

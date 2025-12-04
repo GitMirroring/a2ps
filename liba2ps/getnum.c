@@ -20,11 +20,12 @@
 #include <stdio.h>
 #include <stdlib.h>   /* abort() is wanted */
 
+#include <error.h>
+
 #include "argmatch.h"
 #include "getnum.h"
 #include "quotearg.h"
 #include "routines.h"
-#include "error.h"
 
 /************************************************************************
  *	Get a length/integer in an interval				*

@@ -26,9 +26,10 @@
 #include <stdlib.h>
 #include <fcntl.h>
 
+#include <error.h>
+
 #include "xbackupfile.h"
 #include "routines.h"
-#include "error.h"
 #include "quotearg.h"
 
 

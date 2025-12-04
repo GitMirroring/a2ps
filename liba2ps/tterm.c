@@ -26,9 +26,10 @@
 #include <termios.h>
 #include <sys/ioctl.h>
 
+#include <error.h>
+
 #include "xstrtol.h"
 #include "quotearg.h"
-#include "error.h"
 #include "tterm.h"
 
 struct tterm
