@@ -117,7 +117,7 @@ AS_IF([test "$ac_cv_lib_paper_systempapername" = "no" || test "$ac_cv_header_pap
   [AC_MSG_ERROR([a2ps needs libpaper to work])])
 
 # Internationalization.
-AM_GNU_GETTEXT_VERSION([0.20.2])
+AM_GNU_GETTEXT_VERSION([0.22])
 AM_GNU_GETTEXT([external], [need-ngettext])
 
 # In path separator character.
