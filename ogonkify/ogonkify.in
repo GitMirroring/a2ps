@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/home/linuxbrew/.linuxbrew/bin/perl
 # Convert the PostScript output of Netscape to use an arbitrary encoding.
 # Do font remapping if asked for.
 # By J. Chroboczek <jec at dcs.ed.ac.uk>
