@@ -692,7 +692,7 @@ additional help on specific features.\n"));
   -1, -2, ..., -9                predefined font sizes and layouts for 1..9\n\
                                  virtuals\n\
   -A, --file-align=MODE          align separate files according to MODE (fill,\n\
-                                 rank page, sheet, or a number)\n\
+                                 rank, page, sheet, or a number)\n\
   -j, --borders*                 print borders around columns\n\
       --margin[=NUM]             define an interior margin of size NUM\n"));
   putchar ('\n');
