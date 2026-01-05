@@ -20,7 +20,7 @@ AC_DEFUN([jm_PERL],
 
   found=no
   AC_SUBST(PERL)
-  PERL="$missing_dir/missing perl"
+  PERL="$ac_aux_dir/missing perl"
   for perl in $candidate_perl_names; do
     # Run test in a subshell; some versions of sh will print an error if
     # an executable is not found, even if stderr is redirected.

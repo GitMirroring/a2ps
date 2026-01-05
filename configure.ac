@@ -84,7 +84,7 @@ AS_CASE([`$LEX --version`],
     [AC_MSG_RESULT([yes])],
   [
     AC_MSG_RESULT([no])
-    LEX="$SHELL $missing_dir/missing flex"
+    LEX="$SHELL $ac_aux_dir/missing flex"
     AC_SUBST([LEX_OUTPUT_ROOT], [lex.yy])
     AC_SUBST([LEXLIB], [''])
 ])
